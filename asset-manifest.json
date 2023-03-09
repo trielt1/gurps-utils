@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gurps-utils/static/css/main.345ec4e7.css",
-    "main.js": "/gurps-utils/static/js/main.4a794f47.js",
+    "main.js": "/gurps-utils/static/js/main.cc0d669e.js",
     "static/js/787.ed3ef5c1.chunk.js": "/gurps-utils/static/js/787.ed3ef5c1.chunk.js",
     "index.html": "/gurps-utils/index.html",
     "main.345ec4e7.css.map": "/gurps-utils/static/css/main.345ec4e7.css.map",
-    "main.4a794f47.js.map": "/gurps-utils/static/js/main.4a794f47.js.map",
+    "main.cc0d669e.js.map": "/gurps-utils/static/js/main.cc0d669e.js.map",
     "787.ed3ef5c1.chunk.js.map": "/gurps-utils/static/js/787.ed3ef5c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.345ec4e7.css",
-    "static/js/main.4a794f47.js"
+    "static/js/main.cc0d669e.js"
   ]
 }
