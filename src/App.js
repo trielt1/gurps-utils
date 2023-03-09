@@ -1,26 +1,15 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-function AppNavbar() {
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand href="#home">Gurps-Utils</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" >
-                    <Nav className="me-auto">
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    )
-}
+import AppNavbar from './components/AppNavbar.js';
+import NewTrait from './components/NewTrait.js';
+import Stack from 'react-bootstrap/Stack';
 
 function App() {
   return (
     <>
         <AppNavbar />
+        <Stack gap={1} style={{padding: '10px'}}>
+            <NewTrait />
+            <NewTrait />          
+        </Stack>
     </>
   );
 }
