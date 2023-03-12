@@ -1,10 +1,10 @@
 // Bootstrap imports
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Stack from 'react-bootstrap/Stack';
 //FontAwesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash, faGear, faClose, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faTrash, faGear, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 //Object/function imports
 import {useState} from 'react'
 
@@ -19,7 +19,17 @@ function Trait({trait, ...props}){
                         Cost: {trait.cost} pts 
                         {trait.maxLevel !== 1 ? '/lvl' : ''}
                     </span>
-                    <ButtonGroup className='float-end'>
+                    <Stack 
+                        className='float-end'
+                        direction='horizontal'
+                        gap={1}
+                    >
+                       <Button
+                            variant='primary'
+                            onClick={props.infoHandler}
+                       >
+                            <FontAwesomeIcon icon={faCircleInfo} />
+                       </Button>
                        <Button 
                             variant='success' 
                             onClick={props.editHandler}
@@ -32,7 +42,7 @@ function Trait({trait, ...props}){
                        >
                             <FontAwesomeIcon icon={faTrash} />
                        </Button>
-                    </ButtonGroup>
+                    </Stack>
                 </Card.Footer>
             </Card.Body>
         </Card>
